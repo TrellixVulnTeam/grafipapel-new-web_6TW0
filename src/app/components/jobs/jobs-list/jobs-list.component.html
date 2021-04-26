@@ -23,13 +23,12 @@
                 <!-- Recent Jobs -->
                 <article class="u-shadow-v11 rounded g-pa-25">
                     <h2 class="h4 g-mb-15">
-                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#">{{ objs[0].name }}</a>
+                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" [routerLink]="['detail', 1]">{{ objs[0].name }}</a>
                     </h2>
 
                     <ul class="list-inline d-flex justify-content-between g-mb-15">
                         <li class="list-inline-item g-mr-20">
-                            <!-- <img class="g-height-25 g-width-16 g-mr-5" src="/assets/img/logo/gp_logo_25x17.png" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#">{{ objs[0].company }}</a> -->
-                            <img class="g-width-25 g-height-16 g-mr-5" src="/assets/img/logo/gp_logo_25x17.png" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#">{{ objs[0].company }}</a>
+                            <img class="g-width-25 g-height-16 g-mr-5" src="/assets/img/logo/gp_logo_25x17.png" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" [routerLink]="">{{ objs[0].company }}</a>
                         </li>
                         <li class="list-inline-item">
                             <span class="js-rating d-block g-color-primary" data-rating="5"></span>
@@ -69,7 +68,7 @@
 
                     <ul class="list-inline d-flex justify-content-between mb-0">
                         <li class="list-inline-item">
-                            <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" href="#">{{ objs[0].statusId == 1 ? 'Activo' : 'Cerrado' }}</a>
+                            <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" [routerLink]="">{{ objs[0].statusId == 1 ? 'Activo' : 'Cerrado' }}</a>
                         </li>
                         <li class="list-inline-item">
                             <a [routerLink]="['detail', 1]">Ver detalles</a>

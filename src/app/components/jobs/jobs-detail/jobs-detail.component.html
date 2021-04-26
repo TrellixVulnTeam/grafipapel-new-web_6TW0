@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="media-body">
                                     <span class="d-block g-mb-3">
-                                        <a class="u-link-v5 g-font-size-18 g-color-gray-dark-v1 g-color-primary--hover" href="">{{ currentObj.name }}</a>
+                                        <a class="u-link-v5 g-font-size-18 g-color-gray-dark-v1 g-color-primary--hover" [routerLink]="">{{ currentObj.name }}</a>
                                     </span>
                                     <span class="g-font-size-13 g-color-gray-dark-v4 g-mr-15">
                                         <i class="icon-location-pin g-pos-rel g-top-1 mr-1"></i> {{ currentObj.location }}
@@ -55,7 +55,7 @@
                         </div>
 
                         <div class="col-md-3 align-self-center text-md-right">
-                            <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" href="#">{{ currentObj.statusId == 1 ? 'Activo' : 'Cerrado' }}</a>
+                            <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" [routerLink]="">{{ currentObj.statusId == 1 ? 'Activo' : 'Cerrado' }}</a>
                         </div>
                     </div>
                     <!-- End Content Header -->
@@ -221,7 +221,7 @@
                             <h3 class="h5 g-color-gray-dark-v1 g-mb-10">Habilidades</h3>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item g-mb-10" *ngFor="let skill of currentObj.skills">
-                                    <a class="u-tags-v1 g-font-size-13 g-color-main g-brd-around g-bg-gray-light-v5 g-bg-primary--hover g-color-white--hover rounded g-py-5 g-px-15" href="#">{{ skill }}</a>
+                                    <a class="u-tags-v1 g-font-size-13 g-color-main g-brd-around g-bg-gray-light-v5 g-bg-primary--hover g-color-white--hover rounded g-py-5 g-px-15" [routerLink]="">{{ skill }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -242,7 +242,7 @@
                         </div>
                         <div class="media-body">
                             <span class="d-block">
-                                <a class="u-link-v5 g-font-size-18 g-color-gray-dark-v1 g-color-primary--hover" href="">{{ currentObj.company }}</a>
+                                <a class="u-link-v5 g-font-size-18 g-color-gray-dark-v1 g-color-primary--hover" [routerLink]="">{{ currentObj.company }}</a>
                             </span>
                             <!-- <span class="js-rating d-inline-block small g-color-primary g-mr-15" data-rating="4.5"></span>
                             <span class="g-color-gray-dark-v5">4713 Reviews</span> -->
@@ -299,6 +299,11 @@
                         <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
                             <a href="https://twitter.com/grafipapelsa" target="_blank">
                                 <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+                            <a href="https://www.instagram.com/grafipapelsa" target="_blank">
+                                <i class="fa fa-instagram"></i>
                             </a>
                         </li>
                     </ul>
