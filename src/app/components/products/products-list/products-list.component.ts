@@ -60,7 +60,7 @@ export class ProductsListComponent implements OnInit, AfterViewInit {
       this.productGroups.unshift({id: 'S', name: "SOBRES" })
       this.productGroups = this.productGroups.sort((a, b) => (a.name > b.name) ? 1 : -1);
       this.productGroups.unshift({id: 'N', name: "NUEVOS PRODUCTOS" })
-      this.productGroups.unshift({id: 'T', name: "TODOS" })
+      this.productGroups.push({id: 'T', name: "TODOS" })
 
       let ix = 0;
       if (this.selectedGroupIdByRoute) {
